@@ -1,0 +1,19 @@
+IF(
+  OR(
+    {date a},
+    {date b},
+    {date c},
+    {date d},
+    {date e}
+  ),
+  DATETIME_PARSE(
+    MAX(
+      IF({date a} != FALSE(), VALUE(DATETIME_FORMAT({date a}, 'X')), 0),
+      IF({date b} != FALSE(), VALUE(DATETIME_FORMAT({date b}, 'X')), 0),
+      IF({date c} != FALSE(), VALUE(DATETIME_FORMAT({date c}, 'X')), 0),
+      IF({date d} != FALSE(), VALUE(DATETIME_FORMAT({date d}, 'X')), 0),
+      IF({date e} != FALSE(), VALUE(DATETIME_FORMAT({date e}, 'X')), 0)
+    ),
+    'X'
+  )
+)
