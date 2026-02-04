@@ -4,6 +4,10 @@ Author: Daniel Rudaev (D1DX)
 
 Maintains bidirectional parent-child links in Airtable tables.
 
+## Note: No Longer Needed
+
+Airtable has updated their platform. When creating a linked record field to the same table, Airtable now automatically creates the opposite bidirectional link that syncs automatically. This script is preserved for legacy bases or specific edge cases.
+
 ## Scripts
 
 - `sync-all.js` - Sync all parent-child relationships in the table
