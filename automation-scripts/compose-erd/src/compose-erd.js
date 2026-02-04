@@ -1,4 +1,4 @@
-//Version 2.1
+// Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 //Copyright (c) 2025 D1DX. All rights reserved.
 
 // ------------------------------------------------------

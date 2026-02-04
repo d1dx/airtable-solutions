@@ -1,3 +1,4 @@
+// Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 //Merge original record and duplicates into one array 
 
 let config = input.config();

@@ -1,3 +1,4 @@
+// Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 // Personal access token
 const token = 'YOUR-AIRTABLE-PAT-HERE';
 

@@ -1,3 +1,4 @@
+# Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 def generate_date_formula(offset, add_comma):
     """
     Generate an IF snippet for a given offset in days.

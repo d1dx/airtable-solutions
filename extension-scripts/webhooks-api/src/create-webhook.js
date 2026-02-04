@@ -1,3 +1,4 @@
+// Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 /******************************************************************
  * Webhook management
  * – constants configured once via the Extension Settings panel

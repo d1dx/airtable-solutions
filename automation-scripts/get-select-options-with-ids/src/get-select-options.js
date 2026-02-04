@@ -1,3 +1,4 @@
+// Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 // Create User Selectable Settings for Table and Select Field
 const config = input.config({
   title: 'Get Single or Multiple Select Options',

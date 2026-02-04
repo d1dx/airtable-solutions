@@ -1,3 +1,4 @@
+// Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 /**
  * Airtable Automation - Run a script
  * Inputs (input.config):

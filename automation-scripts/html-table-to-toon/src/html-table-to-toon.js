@@ -1,3 +1,4 @@
+// Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 /**
  * INPUT variable (Automation step):
  * - html (string)  -> the HTML snippet containing <table>...</table>

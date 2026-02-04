@@ -1,3 +1,4 @@
+// Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 let inputConfig = input.config();
 
 // Check if the required input (recordId) is provided

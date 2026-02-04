@@ -1,3 +1,4 @@
+// Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 let config = input.config();
 let table = config.table;
 let source = config.source;

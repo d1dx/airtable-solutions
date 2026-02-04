@@ -1,3 +1,4 @@
+# Author: Daniel Rudaev (D1DX) | Version: 1.0.0
 def generate_combined_formula_no_spaces_with_comma_check(x, output_file):
     """
     Generate a CONCATENATE formula for all items from 1 to x without spaces in formulas.
