@@ -25,4 +25,3 @@ Interactive script with user prompts for table, field, and output format selecti
 - **Table** - Structured table view
 - **Comma Separated** - CSV-style output
 
-Version: 1.0.0

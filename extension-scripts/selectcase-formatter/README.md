@@ -24,4 +24,3 @@ Extension script that applies consistent formatting to single and multiple selec
 - Bulk update field options
 - Preview changes before applying
 
-Version: 1.0.0

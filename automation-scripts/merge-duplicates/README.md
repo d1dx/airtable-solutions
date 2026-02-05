@@ -24,4 +24,3 @@ Interactive script that identifies and merges duplicate records based on specifi
 - Deletes or archives merged records
 - Preserves data integrity
 
-Version: 1.0.0

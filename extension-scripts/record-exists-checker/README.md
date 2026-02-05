@@ -23,4 +23,3 @@ Extension script for validating record presence in tables.
 - Return matching record details
 - Support for complex search criteria
 
-Version: 1.0.0

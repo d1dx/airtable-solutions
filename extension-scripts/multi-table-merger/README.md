@@ -29,4 +29,3 @@ Interactive extension scripts for keeping multiple tables in sync.
 - Field mapping configuration
 - Data validation and error handling
 
-Version: 1.0.0

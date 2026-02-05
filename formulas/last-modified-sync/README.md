@@ -6,21 +6,7 @@ Finds the latest date across multiple date fields, including sync-related tables
 
 ## Formula
 
-```
-IF(
-  OR({date a}, {date b}, {date c}, {date d}, {date e}),
-  DATETIME_PARSE(
-    MAX(
-      IF({date a} != FALSE(), VALUE(DATETIME_FORMAT({date a}, 'X')), 0),
-      IF({date b} != FALSE(), VALUE(DATETIME_FORMAT({date b}, 'X')), 0),
-      IF({date c} != FALSE(), VALUE(DATETIME_FORMAT({date c}, 'X')), 0),
-      IF({date d} != FALSE(), VALUE(DATETIME_FORMAT({date d}, 'X')), 0),
-      IF({date e} != FALSE(), VALUE(DATETIME_FORMAT({date e}, 'X')), 0)
-    ),
-    'X'
-  )
-)
-```
+See formula.txt file for copy-paste ready formula.
 
 ## Setup
 
@@ -42,4 +28,3 @@ IF(
 - Find most recent activity in related tables
 - Determine latest modification time
 
-Version: 1.0.0

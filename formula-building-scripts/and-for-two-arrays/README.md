@@ -2,33 +2,24 @@
 
 Author: Daniel Rudaev (D1DX)
 
-Python script that generates CONCATENATE formulas with comma checking for array operations.
+Builds an Airtable formula that performs AND operation on items from two arrays.
+
+## What It Does
+
+Takes items from array A and array B, and creates a formula that combines them with comma separation. The formula checks if each position exists in both arrays before including it in the result.
 
 ## Usage
 
-```python
-python src/and-for-two-arrays.py
+Run the Python script with:
+- x = number of items to check in the arrays
+- output_file = path to save the generated formula (e.g., "output.txt")
 
-# Call the function:
-generate_combined_formula_no_spaces_with_comma_check(x, "output.txt")
-```
-
-## Parameters
-
-- `x` - Number of items to include in the formula
-- `output_file` - Path to save the generated formula
+Call: generate_combined_formula_no_spaces_with_comma_check(x, "output.txt")
 
 ## Output
 
-Generates an Airtable CONCATENATE formula that:
-- Combines array items with conditional comma insertion
-- Checks comma count in array {A}
-- Handles array boundaries automatically
-
-## Use Cases
-
-- Building complex array concatenation formulas
-- Dynamic array merging with separators
-- Conditional array element joining
-
-Version: 1.0.0
+Generates an Airtable formula that:
+- Checks each position (1 through x) in both arrays
+- Only includes items where both arrays have values at that position
+- Adds commas between items automatically
+- Handles array boundaries and empty values

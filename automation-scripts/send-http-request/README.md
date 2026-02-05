@@ -6,11 +6,7 @@ Sends webhook HTTP requests with retry mechanism and error handling.
 
 ## Usage
 
-```javascript
-// Configure in automation:
-// webhookUrl: "https://your-webhook-endpoint.com"
-// payload: { your: "data" }
-```
+Configure in automation: webhookUrl: "https://your-webhook-endpoint.com" and payload: your JSON data
 
 ## Setup
 
@@ -33,4 +29,3 @@ Sends webhook HTTP requests with retry mechanism and error handling.
 - Error handling and logging
 - Supports custom headers and methods
 
-Version: 1.0.0

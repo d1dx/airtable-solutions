@@ -32,4 +32,3 @@ Interactive extension scripts that manage hierarchical table relationships.
 - Single record or bulk sync options
 - Preserves data integrity
 
-Version: 1.0.0

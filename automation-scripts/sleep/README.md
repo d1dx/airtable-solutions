@@ -6,10 +6,7 @@ Controlled delays in Airtable automations with validation.
 
 ## Usage
 
-```javascript
-// In your automation script action, configure:
-// delaySeconds: 5 (for 5-second delay)
-```
+In your automation script action, configure delaySeconds: 5 (for 5-second delay)
 
 ## Setup
 
@@ -27,5 +24,3 @@ Controlled delays in Airtable automations with validation.
 ## How It Works
 
 Uses busy-wait loop to create delays in Airtable automations where `setTimeout` is not available. Validates input and enforces maximum delay limits.
-
-Version: 1.0.0
