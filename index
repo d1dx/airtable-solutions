@@ -1,3 +1,0 @@
-//1. Add a new formula field named "Record ID" in the children table.  2. Add a "Record ID (from Children)" lookup field in Parent table. 3. Add a "index" rollup field in Children table with the following formula:
-
-IF(values,(FIND(RECORD_ID(),ARRAYJOIN(values,''))-1)/LEN(RECORD_ID())+1)
