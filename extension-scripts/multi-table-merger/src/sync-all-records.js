@@ -17,7 +17,6 @@
  * - No change                ➜ do nothing (skip write)
  *
  * Prerequisites
- * - Secret “token” (PAT) stored in scripting environment.
  * - Results table contains:
  *       • “-Source Record ID-”  (text)
  *       • “Destroyed?”          (checkbox)
@@ -25,7 +24,13 @@
  **********************************************************************/
 
 /* ========== CONFIG ========== */
-const token = input.secret('token');
+const token = await input.textAsync("Please enter your Airtable personal access token:");
+
+if (!token || !token.trim()) {
+    output.text("No token provided. Exiting.");
+    throw new Error("Token is required");
+}
+
 const REFRESH_FIELDS = ['Status', 'Users']; // key, high-impact
 const TABLES_TO_NOT_SYNC = ['Results', 'Settings']; // always skip
 const DESTROYED_FIELD = 'Destroyed?';

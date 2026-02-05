@@ -12,10 +12,6 @@ const cfg = input.config({
     title: 'Webhook – constants',
     description: 'Populate once in the sidebar. No code edits required.',
     items: [
-        input.config.text('token', {
-            label: 'Personal access token',
-            placeholder: 'patXXXXXXXXXXXXXX',
-        }),
         input.config.text('webhookUrl', {
             label: 'Webhook URL',
             placeholder: 'https://example.com/webhook',
@@ -51,7 +47,6 @@ const csv = (s) => s.split(',').map((v) => v.trim()).filter(Boolean);
 /**************************************************************
  * 3. CONSTANTS FROM SETTINGS
  **************************************************************/
-const token                     = cfg.token.trim();
 const webhookUrl                = cfg.webhookUrl.trim();
 const dataTypesInput            = csv(cfg.dataTypes);
 const changeTypesInput          = csv(cfg.changeTypes);
@@ -60,8 +55,17 @@ const recordChangeScopeInput    = cfg.recordScopeViewId.trim();   // view ID
 const watchDataInFieldIdsInput  = csv(cfg.fieldIds);
 
 /**************************************************************
- * 4. OPTIONAL RUNTIME INPUT
+ * 4. RUNTIME INPUT
  **************************************************************/
+const token = await input.textAsync(
+    "Please enter your Airtable personal access token:"
+);
+
+if (!token || !token.trim()) {
+    output.text("No token provided. Exiting.");
+    throw new Error("Token is required");
+}
+
 const webhookIdToDelete = await input.textAsync(
     "Enter existing webhook ID to delete (or '-' to skip):"
 );
