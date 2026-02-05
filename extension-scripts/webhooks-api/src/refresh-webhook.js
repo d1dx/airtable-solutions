@@ -12,8 +12,7 @@ const fetchJSON = async (url, options) => {
 };
 
 // Function to refresh webhook
-const refreshWebhook = async (baseId, webhookId) => {
-    const token = 'YOUR-AIRTABLE-PAT-HERE';
+const refreshWebhook = async (baseId, webhookId, token) => {
     const url = `https://api.airtable.com/v0/bases/${baseId}/webhooks/${webhookId}/refresh`;
     const options = {
         method: 'POST',
@@ -25,8 +24,22 @@ const refreshWebhook = async (baseId, webhookId) => {
     return jsonResponse.expirationTime;
 };
 
+// Prompt for token and webhook ID
+const token = await input.textAsync("Please enter your Airtable personal access token:");
+
+if (!token) {
+    console.log("No token provided. Exiting.");
+    return;
+}
+
+const webhookId = await input.textAsync("Please enter the webhook ID:");
+
+if (!webhookId) {
+    console.log("No webhook ID provided. Exiting.");
+    return;
+}
+
 // Executing the refreshWebhook function
 const baseId = base.id;
-const webhookId = input.config().webhookId;
 
-await refreshWebhook(baseId, webhookId);
+await refreshWebhook(baseId, webhookId, token);

@@ -1,6 +1,12 @@
 // Author: Daniel Rudaev (D1DX) | Version: 1.0.0
-// Personal access token
-const token = 'YOUR-AIRTABLE-PAT-HERE';
+// Prompt the user for their personal access token
+const token = await input.textAsync("Please enter your Airtable personal access token:");
+
+if (!token) {
+    console.log("No token provided. Exiting.");
+    output.text("No token provided. Exiting.");
+    return;
+}
 
 // Initialize the API authorization
 const authorizationHeader = {
