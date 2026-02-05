@@ -6,10 +6,7 @@ Fetches website favicons and uploads them to tmpfiles.org for temporary hosting.
 
 ## Usage
 
-```javascript
-// Configure in automation:
-// siteUrl: "https://www.example.com"
-```
+Configure in automation: siteUrl: "https://www.example.com"
 
 ## Setup
 
@@ -34,5 +31,3 @@ Fetches website favicons and uploads them to tmpfiles.org for temporary hosting.
 2. Fetches favicon as binary data
 3. Uploads to tmpfiles.org via multipart form-data
 4. Returns direct download link
-
-Version: 1.0.0

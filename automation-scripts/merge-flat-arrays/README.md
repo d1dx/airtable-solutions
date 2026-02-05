@@ -6,12 +6,7 @@ Combines three arrays into a structured array of objects.
 
 ## Usage
 
-```javascript
-// Configure in automation:
-// array1: ["a", "b", "c"]
-// array2: [1, 2, 3]
-// array3: ["x", "y", "z"]
-```
+Configure in automation with three arrays: array1, array2, array3
 
 ## Setup
 
@@ -33,4 +28,3 @@ Array of objects combining values from all three arrays at each index.
 
 Example output: `[{key1: "a", key2: 1, key3: "x"}, ...]`
 
-Version: 1.0.0

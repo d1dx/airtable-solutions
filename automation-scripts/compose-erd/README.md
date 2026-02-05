@@ -28,4 +28,3 @@ Interactive script that analyzes base schema and creates ERD visualization.
 - Understanding complex relationships
 - Planning schema changes
 
-Version: 1.0.0

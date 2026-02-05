@@ -36,4 +36,3 @@ Each script requires:
 - Refresh webhook expiration dates
 - Interactive prompts for configuration
 
-Version: 1.0.0

@@ -6,10 +6,7 @@ Converts HTML tables to TOON text format.
 
 ## Usage
 
-```javascript
-// Configure in automation:
-// htmlTable: "<table>...</table>"
-```
+Configure in automation with htmlTable variable containing your HTML table markup
 
 ## Setup
 
@@ -28,4 +25,3 @@ Converts HTML tables to TOON text format.
 - TOON formatted text representation of table data
 - Preserves table structure and content
 
-Version: 1.0.0
